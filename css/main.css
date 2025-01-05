@@ -1,0 +1,105 @@
+:root {
+  --max-content-width: 820px;
+  --accent-colour: #E16A54;
+  --background-colour: #1E201E;
+  --border-colour: #697565;
+  --text-colour: #ECDFCC;
+  --top-line-text-colour: var(var(--text-colour));
+}
+
+body {
+  background-color: var(--background-colour);
+  color: var(--text-colour);
+  font-family: Tahoma, sans-serif;
+  font-size: 1em;
+  margin: 0;
+}
+
+.top-text-block {
+  background-color: var(--border-colour);
+  box-sizing: border-box;
+  color: var(--top-line-text-colour);
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+}
+
+.photo {
+  max-height: 360px;
+  text-align: center;
+}
+
+.photo img {
+  border-radius: 10em;
+  border: 0.65em solid var(--border-colour);
+  height: 180px;
+}
+
+.contacts {
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 0 0.25em;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+p {
+  margin: 1em;
+}
+
+a,
+a:visited {
+  color: var(--accent-colour);
+}
+
+.accent {
+  color: var(--accent-colour);
+}
+
+.inverted {
+  color: var(--background-colour);
+}
+
+.greetings {
+  text-align: center;
+}
+
+ul li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 780px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .left {
+    float: left;
+    width: 40%;
+  }
+
+  .right {
+    float: right;
+    width: 60%;
+  }
+
+  .photo {
+    padding-top: 2em;
+  }
+
+  .photo img {
+    border-width: 1em;
+    height: 280px;
+  }
+
+}
